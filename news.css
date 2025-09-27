@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px 80px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    color: #f1faee;
+  }
+
+  .news h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .news p {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+
+
+
+ /* Header */
+header {
+    background: #1e2a38;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Навигация */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: #2f3d4e;
+}
+
+/* Dropdown (Тағы қараңыз) */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #2f3d4e;
+    padding: 10px 0;
+    border-radius: 8px;
+    min-width: 200px;
+    flex-direction: column;
+    z-index: 10;
+}
+
+nav ul li ul a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav ul li:hover ul {
+    display: flex;
+}
+
+.logo-link {
+    text-decoration: none; /* астындағы сызықты өшіреді */
+    color: white; /* түсін ақ қылады */
+  }

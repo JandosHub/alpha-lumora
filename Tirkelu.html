@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SokolOW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header><a href="index.html" class="logo-link"></a><h3>Lumora </h3>
+    <div class="links">
+        <nav><ul>
+            <li>
+                <a href="News.html">Жаңалықтар</a>
+                <a href="Okulyq.html">Оқулықтар</a>
+
+        
+                <a href="Duken.html">Дүкен</a>
+                <a href="#">Профиль</a>
+                <a href="Tirkelu.html">Тіркелу</a>
+                <li>
+                    <a href="#">Тағы қараңыз</a>
+                    <ul>
+                        <a href="#">Қызықты ақпараттар</a>
+                        <a href="#">Сайт туралы</a>
+                        <a href="#">Қосымша ақпараттар</a>
+                        <a href="#">Құрастырушылар</a>
+                    </ul>
+                </li>
+
+
+            </li>
+    </ul></nav>
+    </div>
+
+
+    <!-- Іздеу жолағы -->
+  <form class="search-bar">
+    <input type="text" placeholder="Іздеу..." />
+    <button type="submit">🔍</button>
+  </form>
+  <script>
+document.getElementById("search").addEventListener("keyup", function() {
+  let filter = this.value.toLowerCase();
+  let items = document.querySelectorAll(".content p");
+
+  items.forEach(item => {
+    if (item.textContent.toLowerCase().includes(filter)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});
+
+  </script>
+ </header>
+<body>
+    <section class="register">
+        <h2>Тіркелу</h2>
+        <form action="#" method="post">
+            <label for="name">Аты-жөніңіз:</label>
+            <input type="text" id="name" name="name" placeholder="Аты-жөніңізді енгізіңіз" required>
+    
+            <label for="email">Электронды пошта:</label>
+            <input type="email" id="email" name="email" placeholder="Email енгізіңіз" required>
+    
+            <label for="password">Құпия сөз:</label>
+            <input type="password" id="password" name="password" placeholder="Құпия сөз енгізіңіз" required>
+    
+            <label for="confirm">Құпия сөзді қайталаңыз:</label>
+            <input type="password" id="confirm" name="confirm" placeholder="Қайта енгізіңіз" required>
+    
+            <button type="submit">Тіркелу</button>
+        </form>
+        <p class="login-text">Тіркелгенсіз бе? <a href="Kiru.html">Кіру</a></p>
+    </section>
+    <script src="Sokol.js"></script>
+</body>
+</html>
